@@ -1,0 +1,488 @@
+/* Estilos generales */
+body {
+    background-color: #2f0b49; /* Color morado */
+    color: white; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: #370f53; /* Un morado más oscuro para el nav */
+    padding: 20px 0;
+}
+
+.nav-title{
+font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #2f0b49; /* Fondo para destacar la sección */
+    border-radius: 15px; /* Aumentado para más redondez */
+    margin-top: 50px; /* Ajusta para mover la sección más arriba */
+}
+
+.profile-image {
+    width: 250px; /* Tamaño del perfil aumentado */
+    height: 340px;
+    border-radius: 10%; /* Bordes redondeados */
+    margin-right: 20px;
+    border: 4px solid #2f0b49; /* Borde alrededor de la imagen */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar todo el contenido */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em; /* Tamaño de fuente mayor */
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.7em; /* Tamaño de fuente mayor */
+    margin: 10px 0 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 8px 15px; /* Aumentado para un botón más grande */
+    font-size: 1em; /* Tamaño de fuente menor */
+    color: white;
+    background-color: #2f0b49; /* Color morado más claro para el botón */
+    text-decoration: none;
+    border-radius: 20px; /* Aumentado para más redondez */
+    margin-bottom: 30px;
+}
+
+.contact-button:hover {
+    background-color: #2f0b49;
+}
+
+.repository-button {
+    display: inline-block;
+    padding: 5px 10px; /* Botón más pequeño */
+    font-size: 0.8em; /* Tamaño de fuente menor */
+    color: white;
+    background-color: #8a2be2; /* Color morado más claro para el botón */
+    text-decoration: none;
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.repository-button:hover {
+    background-color: #6a0dad;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre las imágenes */
+    margin-top: 20px;
+}
+
+.small-image {
+    width: 40px; /* Tamaño aumentado para las imágenes */
+    height: 40px;
+}
+
+/* Estilo para la sección de Projects */
+.projects {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 1.7em; /* Tamaño de fuente igual al de otras secciones */
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #380e56; /* Fondo para destacar la sección */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px; /* Espacio superior para separar de la sección anterior */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+.project:hover {
+    background-color: #4a0a7d; /* Color de fondo al pasar el ratón */
+}
+
+.project-image {
+    width: 300px; /* Tamaño de la imagen del proyecto */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 20px;
+}
+
+.project-info {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    align-items: center; /* Alinea verticalmente en el centro */
+    gap: 20px; /* Espacio entre la imagen y el contenido */
+    margin-bottom: 20px; /* Espacio debajo del contenido */
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project-info .repository-button {
+    align-self: flex-start; /* Alineación a la izquierda */
+}
+
+/* Estilo para la sección de Stack */
+#stack {
+    margin-top: 50px;
+}
+
+#stack h2 {
+    text-align: center;
+    font-size: 1.7em; /* Tamaño de fuente igual al de otras secciones */
+    margin-bottom: 20px;
+}
+
+.stack-info {
+    text-align: left; /* Alineación a la izquierda */
+    margin-top: 20px;
+}
+
+/* Estilos para la sección About me */
+#aboutme {
+    margin-top: 50px;
+}
+
+#aboutme h2 {
+    text-align: center;
+    font-size: 1.7em; /* Tamaño de fuente igual al de otras secciones */
+    margin-bottom: 20px;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; /* Espacio a la derecha del texto */
+}
+
+.about-me-text p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.download-cv-button {
+    display: inline-block;
+    margin-top: 15px; /* Espacio encima del botón */
+    padding: 10px 20px;
+    background-color: #4a0a7d; /* Color de fondo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv-button:hover {
+    background-color: #6a0dad; /* Color de fondo al pasar el ratón */
+}
+
+.about-me-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos dentro de esta sección */
+    text-align: center; /* Centra el texto */
+}
+
+.years-box {
+    background-color: #4a0a7d; /* Fondo morado más oscuro */
+    border: 4px solid #2f0b49;; /* Borde morado más claro */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center; /* Centra el texto dentro del cuadro */
+    margin-bottom: 5px; /* Espacio debajo del cuadro */
+}
+
+.years-box p {
+    font-size: 3em; /* Tamaño grande para el texto */
+    margin: 0;
+    color: white;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro de esta sección */
+}
+
+.details-box {
+    background-color: #2e0f47; /* Fondo morado más oscuro */
+    border: 4px solid #401062;; /* Borde morado más claro */
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 5px; /* Espacio debajo del cuadro */
+    width: 100%; /* Ocupa el 100% del contenedor padre */
+    text-align: center; /* Centra el texto dentro de cada details-box */
+}
+
+.details-box p {
+    font-size: 0.9em; /* Tamaño pequeño para los textos */
+    margin: 0; /* Elimina el margen para evitar espacios adicionales */
+    color: white;
+}
+
+/* Estilo para el primer párrafo con espacio */
+.space-p {
+    margin-bottom: 20px; /* Ajusta este valor para el espacio deseado */
+}
+
+/* Estilos para la sección de Stack */
+#stack {
+    text-align: center;
+    margin-top: 50px; /* Espacio superior antes del título */
+}
+
+#stack h2 {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.tech-stack {
+    display: grid; /* Usa grid para organizar las imágenes en una cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 55px; /* Espacio entre las imágenes */
+    padding: 100px; /* Espacio interno alrededor del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.tech-image {
+    width: 90px; /* Tamaño de las imágenes, ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Efecto de transición para el hover */
+}
+
+.tech-image:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor por encima */
+}
+
+
+
+/* Estilo para la sección de Contact */
+#contact {
+    margin-top: 50px;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+#contact h2 {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column; /* Alinea el título en la parte superior */
+    align-items: center; /* Centra horizontalmente los elementos */
+    gap: 10px; /* Espacio entre el título y el contenido debajo */
+}
+
+.contact-item h3 {
+    font-size: 1.2em; /* Tamaño del encabezado */
+    margin-bottom: 5px; /* Espacio debajo del encabezado */
+}
+
+.contact-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente el botón y el texto */
+    gap: 10px; /* Espacio entre el botón y el texto */
+}
+
+.contact-button {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono dentro del botón */
+    padding: 5px; /* Espacio dentro del botón */
+    background-color: #8a2be2; /* Color de fondo del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #6a0dad; /* Color al pasar el ratón */
+}
+
+.contact-icon {
+    width: 20px; /* Tamaño reducido de la imagen */
+    height: 20px;
+}
+
+.contact-item p {
+    font-size: 1.2em; /* Tamaño del texto */
+    margin: 10px; /* Elimina el margen para evitar espacios adicionales */
+    margin-top: -20px;
+}
+
+
+/* Estilo para el footer */
+#footer {
+    color: white; /* Color del texto en el footer */
+    padding: 20px; /* Espacio interno del footer */
+    text-align: center; /* Centra el texto en el footer */
+    position: relative; /* Necesario para el botón de volver arriba */
+}
+
+hr {
+    border: none; /* Elimina el borde por defecto */
+    border-top: 1px solid #8a2be2; /* Línea superior de color */
+    width: 600px; /* Ancho de la línea (ajustar según sea necesario) */
+    margin: 20px auto; /* Espacio alrededor y centra horizontalmente */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    gap: 10px; /* Espacio entre los elementos del footer */
+}
+
+#scroll-to-top {
+    background-color: #8a2be2; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espacio interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em; /* Tamaño del texto del botón */
+}
+
+#scroll-to-top:hover {
+    background-color: #6a0dad; /* Color al pasar el ratón sobre el botón */
+}
+
+
+/* Estilo para el selector de idioma en el menú de navegación */
+.language-selector {
+    position: absolute; /* Posiciona el selector en la esquina superior derecha */
+    top: 15px; /* Ajusta el espacio desde la parte superior */
+    right: 10px; /* Ajusta el espacio desde el borde derecho */
+    display: flex; /* Alinea los elementos en fila */
+    gap: 10px; /* Espacio entre los botones de idioma */
+}
+
+.lang-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.lang-icon {
+    width: 30px; /* Tamaño pequeño de las imágenes */
+    height: 30px;
+}
+
+.nav {
+    position: relative; /* Necesario para el posicionamiento absoluto del selector de idioma */
+}
+
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 0 20px 0;
+    }
+
+    .info {
+        align-items: center;
+    }
+
+    #projects,
+    #stack,
+    #aboutme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #projects {
+        margin-bottom: 20px;
+    }
+
+    #stack {
+        margin-bottom: 20px;
+    }
+
+    #aboutme {
+        margin-bottom: 20px;
+    }
+}
