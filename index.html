@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="./img/ventana.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a class="nav-title" href="#projects" data-i18n="projectsTitle">Projects</a></li>
-            <li><a class="nav-title" href="#stack" data-i18n="techStackTitle">Stack</a></li>
-            <li><a class="nav-title" href="#aboutme" data-i18n="aboutMeTitle">About me</a></li>
-        </ul>
-        <div class="language-selector">
-            <a href="#" data-lang="es" class="lang-button"><img src="img/es.png" alt="Spanish" class="lang-icon"></a>
-            <a href="#" data-lang="en" class="lang-button"><img src="img/en.png" alt="English" class="lang-icon"></a>
-        </div>
-    </nav>
+
+<nav>
+    <ul class="nav-links">
+        <li><a class="nav-title" href="#projects" data-i18n="projectsTitle">Projects</a></li>
+        <li><a class="nav-title" href="#stack" data-i18n="techStackTitle">Stack</a></li>
+        <li><a class="nav-title" href="#aboutme" data-i18n="aboutMeTitle">About me</a></li>
+    </ul>
+    <div class="language-selector">
+        <a href="#" data-lang="es" class="lang-button"><img src="img/es.png" alt="Spanish" class="lang-icon"></a>
+        <a href="#" data-lang="en" class="lang-button"><img src="img/en.png" alt="English" class="lang-icon"></a>
+    </div>
+</nav>
+
+
+    
     <div class="content">
         <div class="profile-section">
             <img src="img/profile.png" alt="Profile" class="profile-image">
@@ -33,8 +38,8 @@
         <div id="projects" class="projects">
             <h2 data-i18n="projectsTitle">Projects</h2>
             <div class="project">
+                <img src="img/lelyfy3.png" alt="Project" class="project-image">
                 <div class="project-info">
-                    <img src="img/lelyfy3.png" alt="Project" class="project-image">
                     <div class="project-text">
                         <h3>Lelyfy</h3>
                         <p data-i18n="projectDescription">A feature-rich music application developed in Java and Java Swing, capable of playing .WAV files. It includes login, registration, and the ability to add custom songs to the playlist. Its intuitive interface allows for efficient management and enjoyment of your music collection.</p>
@@ -44,21 +49,23 @@
             </div>
 
             <div class="project">
+                <img src="img/agroGreen1.png" alt="Project" class="project-image">
                 <div class="project-info">
-                    <img src="img/lelyfy1.png" alt="Project" class="project-image">
                     <div class="project-text">
-                        <h3>Lelyfy</h3>
-                        <p data-i18n="projectDescription">A feature-rich music application developed in Java and Java Swing, capable of playing .WAV files. It includes login, registration, and the ability to add custom songs to the playlist. Its intuitive interface allows for efficient management and enjoyment of your music collection.</p>
-                        <a href="https://github.com/Alesvyy/ProyectoPOO" class="repository-button" target="_blank" data-i18n="repository">Repository</a>
+                        <h3>AgroGreen</h3>
+                        <p data-i18n="projectDescription2">An online store developed with HTML, CSS, and JavaScript, powered by Node.js and MongoDB. This platform allows users to sell products such as fruits, vegetables, and dairy with special permission from the administrator. It offers an intuitive and personalized shopping experience. Additionally, it provides vendors and administrators with comprehensive sales statistics, enabling efficient management of products and users.</p>
+                        <a href="https://github.com/Alesvyy/ProyectoAgroGreen/tree/main" class="repository-button" target="_blank" data-i18n="repository">Repository</a>
                     </div>
                 </div>
             </div>
 
                   <div class="project">
+                    <img src="img/example.png" alt="Project" class="project-image">
                 <div class="project-info">
-                    <img src="img/lelyfy2.png" alt="Project" class="project-image">
+
+                  
                     <div class="project-text">
-                        <h3>Lelyfy</h3>
+                        <h3>Example</h3>
                         <p data-i18n="projectDescription">A feature-rich music application developed in Java and Java Swing, capable of playing .WAV files. It includes login, registration, and the ability to add custom songs to the playlist. Its intuitive interface allows for efficient management and enjoyment of your music collection.</p>
                         <a href="https://github.com/Alesvyy/ProyectoPOO" class="repository-button" target="_blank" data-i18n="repository">Repository</a>
                     </div>
@@ -100,6 +107,11 @@
             <a href="./cv/CV Alejandro Soto.pdf" class="download-cv-button" download data-i18n="downloadCV">Download CV in PDF</a>        
         </div>
 
+
+        
+    </div>
+
+    <div class="details-wrapper">
         <div class="details">
             <div class="details-box">
                 <p data-i18n="programming">Programming</p>
@@ -111,13 +123,15 @@
                 <p data-i18n="design">Design</p>
             </div>
         </div>
-
+    
         <div class="about-me-details">
             <div class="years-box">
                 <p>+4</p>
             </div>
         </div>
     </div>
+    
+
 </div>
 
 
@@ -169,7 +183,7 @@
         </footer>
     </div>
 
-    <script src="function.js"></script>
+    <script src="script.js"></script>
     <script src="i18n.js"></script>
 </body>
 </html>

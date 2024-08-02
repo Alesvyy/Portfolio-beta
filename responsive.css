@@ -1,0 +1,232 @@
+@media (max-width: 480px) {
+
+    nav {
+        width: 110%;
+    }
+
+    nav ul {
+        justify-content: flex-start; 
+        padding-left: 55px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a.nav-title {
+        font-size: 14px;
+    }
+
+    .language-selector {
+        margin-left: auto;
+        padding-right: 5px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 0 20px 0;
+    }
+
+    .info {
+        align-items: center;
+    }
+
+    #projects,
+    #stack,
+    #aboutme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #projects {
+        margin-bottom: 20px;
+    }
+
+    #stack {
+        margin-bottom: 20px;
+    }
+
+    #aboutme {
+        margin-bottom: 20px;
+    }
+
+  
+    .projects, .tech-stack, .about-me, .programming, .database, .design, .others {
+        font-size: 0.9em;
+        padding: 10px;   
+      }
+    
+      h1, h2, h3, h4, h5, h6, p {
+        font-size: 0.9em;
+      }
+    
+      .section {
+        margin: 10px 0;
+        text-align: left;
+      }
+    
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .container {
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+
+      .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    
+      .project-item {
+        flex: 1 1 300px;
+        box-sizing: border-box;
+      }
+
+      .button, .link {
+        font-size: 0.9em;
+        padding: 8px 12px;
+      }
+  
+      hr {
+          border: none;
+          border-top: 1px solid #8a2be2;
+          width: 300px;
+          margin: 20px auto;
+      }
+
+    .tech-stack img {
+        max-width: 50px;
+        height: auto;
+        margin: 0px;
+      }
+   
+      .project-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .project-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    
+      .project-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    
+      .project-item .description {
+        text-align: center;
+        font-size: 0.9em;
+      }
+    
+
+      .projects {
+        width: 400px;  
+       }
+   
+       .project {
+           flex-direction: column; 
+           align-items: center;
+           padding: 10px; 
+       }
+   
+       .project-info {
+           text-align: center;
+       }
+
+    .project {
+        padding: 10px; 
+    }
+
+    .project-info h3 {
+        font-size: 1.1em;
+    }
+
+    .project-info p {
+        font-size: 0.9em;
+        padding: 0px;
+    }
+
+    .project-info .repository-button {
+        padding: 6px 12px; 
+        font-size: 0.8em; 
+    }
+
+    .project-image {
+        width: 300px; 
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px; 
+        margin-left: 20px;
+        margin-right: 0; 
+   
+    }
+
+    .details-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+      }
+    
+      .details {
+        margin-right: 0;
+        margin-bottom: 10px; 
+      }
+    
+      .details-box {
+        margin: 5px; 
+      }
+    
+      .years-box {
+        margin-left: 210px; 
+        margin-top: -120px; 
+      }
+
+      .about-me-text {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%; 
+        padding: 0 10px; 
+        box-sizing: border-box; 
+      }
+      
+  
+    .about-me-text .download-cv-button {
+      display: inline-block;
+      
+      margin: 30px auto;
+    }
+  
+    .details,
+    .about-me-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -20px;
+    }
+  
+    .details-box,
+    .years-box {
+      margin: 10px ;
+      text-align: center;
+    }
+
+}
