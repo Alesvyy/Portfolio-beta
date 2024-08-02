@@ -1,5 +1,3 @@
-// i18n.js
-
 // Traducciones en español e inglés
 const translations = {
     en: {
