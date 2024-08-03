@@ -1,12 +1,18 @@
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 
   nav {
-      width: 110%;
+      width: 100%;
   }
 
   nav ul {
       justify-content: flex-start; 
-      padding-left: 55px;
+      padding-left: 25px;
   }
 
   nav ul li {
@@ -18,9 +24,9 @@
   }
 
   .language-selector {
-      margin-left: auto;
-      padding-right: 5px;
-  }
+    margin-left: auto;
+    margin-top: 0;
+}
 
   .profile-section {
       flex-direction: column;
@@ -195,10 +201,10 @@
       margin: 5px; 
     }
   
-    .years-box {
-      margin-left: 210px; 
-      margin-top: -120px; 
-    }
+.years-box {
+    margin-left: 0;
+    margin-top: 0;
+}
 
     .about-me-text {
       text-align: center;

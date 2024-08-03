@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Función para copiar el texto al portapapeles
+   
     function copyTextToClipboard(text) {
         navigator.clipboard.writeText(text).then(function() {
             console.log('Texto copiado al portapapeles');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Agregar eventos a cada icono
+
     document.getElementById('social-icon').addEventListener('click', function() {
         const text = document.getElementById('social-text').textContent;
         copyTextToClipboard(text);
@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-    // Función para desplazar la página hacia arriba
+
     function scrollToTop() {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Desplazamiento suave
+            behavior: 'smooth'
         });
     }
 
